@@ -1,18 +1,19 @@
-const { template } = require('@babel/core')
+//const { template } = require('@babel/core')
 
 function fillStartWord(startWord, word) {
   let f = startWord;
   let s = word;
   
-  if (word == null || word == undefined){
-    return undefined;
-  }else if(s.startWith(f)){
-    return s;
+  if (s.startsWith(f)){
+    return s ;
+  }else if (word == null || word == undefined){
+      return undefined;
     }
     else {
     return f+s;
   }
 }
 
-module.exports = fillStartWord
+console.log(fillStartWord("first","firstname"));
+//module.exports = fillStartWord
 
