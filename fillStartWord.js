@@ -7,7 +7,7 @@ function fillStartWord(startWord, word) {
   if (word == null || word == undefined){
     return undefined;
   }else if(s.startWith(f)){
-    return secondword;
+    return s;
     }
     else {
     return f+s;
