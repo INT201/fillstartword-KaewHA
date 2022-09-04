@@ -1,14 +1,16 @@
 const { template } = require('@babel/core')
 
 function fillStartWord(startWord, word) {
+  let firstword = startWord;
+  let secondword = word;
   
-  let startWord = "kaew";
-
-  startWords.startWith("kaew");
-
-  let word = "za";
-  startWordss.startWith("za");
+  if (word == null || word == undefined){
+    return undefined;
+  }else if(secondword.startWith(firstword)){
+    return secondword;
+  }else {
+    return firstword + secondword;
+  }
 }
-//module.exports = fillStartWord
+module.exports = fillStartWord
 
-console.log(fillStartWord("kaew","za"));
